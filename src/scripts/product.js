@@ -12,9 +12,10 @@ const product = {
 
     let productTitle = document.createElement("h3");
     productTitle.textContent = productObj.title;
+    productTitle.setAttribute("class", "productTitle");
 
     let productDescription = document.createElement("p");
-    productDescription.textContent = productObj.description;
+    productDescription.textContent = `Description: ${productObj.description}`;
 
     let productPrice = document.createElement("p");
     productPrice.textContent = `Price: ${productObj.price}`;
