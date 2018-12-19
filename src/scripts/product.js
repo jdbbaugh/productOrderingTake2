@@ -1,4 +1,5 @@
 import productList from "./productList"
+import reviewList from "./reviewList"
 
 const product = {
   productBuilder (productObj) {
@@ -12,9 +13,10 @@ const product = {
 
     let productTitle = document.createElement("h3");
     productTitle.textContent = productObj.title;
+    productTitle.setAttribute("class", "productTitle");
 
     let productDescription = document.createElement("p");
-    productDescription.textContent = productObj.description;
+    productDescription.textContent = `Description: ${productObj.description}`;
 
     let productPrice = document.createElement("p");
     productPrice.textContent = `Price: ${productObj.price}`;
@@ -27,6 +29,7 @@ const product = {
     productArticle.appendChild(productPrice);
     productArticle.appendChild(productQuantity);
     productArticle.appendChild(productDescription);
+    reviewList.reviewify();
     
 
     return productArticle;
