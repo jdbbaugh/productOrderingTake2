@@ -1,0 +1,30 @@
+{
+  "product": [
+    {
+    "title": "SkateBoard",
+    "description": "Santa Cruz Deck",
+    "price": "$50.00",
+    "quantity": "3",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQU7Hi2ExlEo2D-qkw2fHjypOPt29_DY3gmDjHFIfmymnV5xva-_A",
+    "id": 1
+  }
+
+  ],
+  "review": [
+    {
+      "productId": "1",
+      "review": "Simply the best thing!",
+      "id": 1
+    },
+    {
+      "productId": "1",
+      "review": "Literally blew my mind with its radness!",
+      "id": 2
+    },
+    {
+      "productId": "1",
+      "review": "Using this was such a great joy that now all other things which life has to offer seem irrelevent!",
+      "id": 3
+    }
+  ]
+}
