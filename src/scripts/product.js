@@ -1,4 +1,5 @@
 import productList from "./productList"
+import reviewList from "./reviewList"
 
 const product = {
   productBuilder (productObj) {
@@ -28,6 +29,7 @@ const product = {
     productArticle.appendChild(productPrice);
     productArticle.appendChild(productQuantity);
     productArticle.appendChild(productDescription);
+    reviewList.reviewify();
     
 
     return productArticle;
