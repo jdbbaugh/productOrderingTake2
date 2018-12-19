@@ -1,4 +1,5 @@
 import productData from "./productData"
+import product from "./product"
 
 const productList = {
   productify () {
