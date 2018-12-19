@@ -3,14 +3,18 @@ import review from "./review"
 import product from "./product"
 
 const reviewList = {
-  reviewify () {
+  reviewify (productIdentifierFromProduct) {
+    console.log(productIdentifierFromProduct)
     reviewData.getReviewData()
     .then(reviewObj => {
       let reviewDocFragment = document.createDocumentFragment();
 
       reviewObj.forEach(sendReviews => {
+        console.log(sendReviews.productId)
+        if (productIdentifierFromProduct === sendReviews.productId) {
         let reviewHTML = review.reviewBuilder(sendReviews);
         reviewDocFragment.appendChild(reviewHTML);
+        }
       })
       const parentConatiner = document.querySelector(".output");
       const reviewContainer = document.createElement("article");
