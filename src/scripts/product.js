@@ -29,7 +29,7 @@ const product = {
     productArticle.appendChild(productPrice);
     productArticle.appendChild(productQuantity);
     productArticle.appendChild(productDescription);
-    reviewList.reviewify();
+    reviewList.reviewify(productObj.id);
     
 
     return productArticle;

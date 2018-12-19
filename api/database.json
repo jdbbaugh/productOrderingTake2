@@ -12,17 +12,17 @@
   ],
   "review": [
     {
-      "productId": "1",
+      "productId": 1,
       "review": "Simply the best thing!",
       "id": 1
     },
     {
-      "productId": "1",
+      "productId": 1,
       "review": "Literally blew my mind with its radness!",
       "id": 2
     },
     {
-      "productId": "1",
+      "productId": 1,
       "review": "Using this was such a great joy that now all other things which life has to offer seem irrelevent!",
       "id": 3
     }
